@@ -1,3 +1,5 @@
+package day1;
+
 /**
  * Created by oisin on 12/3/16.
  */

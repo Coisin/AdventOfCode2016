@@ -4,7 +4,7 @@ package day3;
  * Created by oisin on 12/3/16.
  */
 public class Day3 {
-
+    // Format input
     public static String[] convertArrayFormat() {
         String[] commands = input.split("\n");
         for(int i = 0;i < commands.length; i++) {

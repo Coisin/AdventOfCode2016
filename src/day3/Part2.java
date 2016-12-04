@@ -4,6 +4,8 @@ package day3;
  * Created by oisin on 12/3/16.
  */
 public class Part2 extends Part {
+
+    // Gets triangles from columns
     public int[][] getTriangles(String[] commands) {
         int[][] triangles = new int[commands.length][3];
         for(int triangleIndex = 0; triangleIndex < commands.length; triangleIndex++) {

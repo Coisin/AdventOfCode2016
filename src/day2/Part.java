@@ -10,6 +10,7 @@ public abstract class Part {
     char[][] dialPad;
     int currentRow, currentColumn;
 
+    //Moves to next key
     void move(char direction) {
         int changeX = 0, changeY = 0;
         switch (direction) {
@@ -46,5 +47,6 @@ public abstract class Part {
         return keyAsString;
     }
 
+    // Checks if move is not gone off the boundaries
     abstract boolean isPossibleMove(int changeX, int changeY);
 }

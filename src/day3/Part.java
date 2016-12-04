@@ -20,6 +20,7 @@ public abstract class Part {
         return Integer.toString(numberValid);
     }
 
+    // Asserts that the two smallest sides added together are greater than the largest side
     public boolean isValid(int sideA, int sideB, int sideC) {
         int sides[] = {sideA, sideB, sideC};
         Arrays.sort(sides);
@@ -27,5 +28,6 @@ public abstract class Part {
         return true;
     }
 
+    // Unique method for each part of the question, for getting the triangles as a 2 dimensional array
     abstract int[][] getTriangles(String[] commands);
 }

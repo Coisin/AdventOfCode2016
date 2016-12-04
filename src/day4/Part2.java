@@ -7,6 +7,7 @@ import java.util.HashMap;
  */
 public class Part2 extends Part {
 
+    // For conversion between Letters and indexes in the Alphabet
     static HashMap<Character, Integer> alphaIndex = new HashMap<>();
     static HashMap<Integer, Character> indexAlpha = new HashMap<>();
 
@@ -44,7 +45,6 @@ public class Part2 extends Part {
     }
 
     public String process(String[] commands) {
-
         for(String com : commands) {
             Command command = convertToCommand(com);
             if(!isValid(command))continue;
@@ -53,10 +53,10 @@ public class Part2 extends Part {
                 return Integer.toString(command.id);
             }
         }
-
         return "Error";
     }
 
+    // Decrypts command's Shift Cipher
     public String desipherString(Command command) {
         String newString = "";
         for(char c : command.name.toCharArray()) {

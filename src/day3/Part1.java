@@ -6,6 +6,8 @@ import java.util.Arrays;
  * Created by oisin on 12/3/16.
  */
 public class Part1 extends Part {
+
+    // Gets triangles from rows
     public int[][] getTriangles(String[] commands) {
         int[][] triangles = new int[commands.length][3];
         for(int triangleIndex = 0; triangleIndex < commands.length; triangleIndex++) {

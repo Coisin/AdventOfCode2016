@@ -8,6 +8,7 @@ import AdventOfCode.Day;
 public class Day5 extends Day {
     public void solve() {
         readInput(new Day5().getClass());
+        input = input.replaceAll("\n", "");
 
         Part part1 = new Part1();
         Part part2 = new Part2();

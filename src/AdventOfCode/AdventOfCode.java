@@ -25,14 +25,20 @@ public class AdventOfCode {
         problems.add(new Day7());
     }
     public static void main(String args[]) {
-        for(int dayIndex = 1; dayIndex <= problems.size(); dayIndex++) {
-            Day problem = problems.get(dayIndex - 1);
-
-            System.out.println("--------------------");
-            System.out.println("Day " + dayIndex);
-            System.out.println("--------------------");
-
-            problem.solve();
+        if(args.length > 0) {
+            commenceSolve(Integer.parseInt(args[0]));
+        } else {
+            for (int dayIndex = 1; dayIndex <= problems.size(); dayIndex++) {
+                commenceSolve(dayIndex);
+            }
         }
+    }
+    static void commenceSolve(int dayIndex) {
+        Day problem = problems.get(dayIndex - 1);
+
+        System.out.println("--------------------");
+        System.out.println("Day " + dayIndex);
+        System.out.println("--------------------");
+        problem.solve();
     }
 }

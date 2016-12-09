@@ -53,5 +53,5 @@ public abstract class Part {
         return false;
     }
 
-    abstract String process(String input);
+    abstract String process(String[] input);
 }

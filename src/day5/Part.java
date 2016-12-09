@@ -6,7 +6,7 @@ import java.util.ArrayList;
 /**
  * Created by oisin on 12/6/16.
  */
-public class Part {
+public abstract class Part {
     static ArrayList<String> hashes = new ArrayList<>();
     static int inc;
     static String MD5Hash(String original) {
@@ -24,4 +24,5 @@ public class Part {
         }
         return null;
     }
+    abstract String process(String input);
 }

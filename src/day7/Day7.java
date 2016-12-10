@@ -2,9 +2,6 @@ package day7;
 
 import AdventOfCode.Day;
 
-import java.io.*;
-import java.net.URL;
-
 /**
  * Created by oisin on 12/9/16.
  */

@@ -17,7 +17,7 @@ public abstract class Part {
     ArrayList<Point> visited = new ArrayList<>();
 
     // Update Direction by given amount, and cycles it where necessary
-    public void rotate(int amount, int steps) {
+    protected void rotate(int amount, int steps) {
         currentDirection += amount;
         if(currentDirection == 4)currentDirection = 0;
         else if(currentDirection == -1)currentDirection = 3;
@@ -44,7 +44,7 @@ public abstract class Part {
         visited.add(new Point(distanceX, distanceY));
     }
 
-    public boolean contains(int x, int y) {
+    protected boolean contains(int x, int y) {
         for(Point point : visited) {
             if(point.x == x && point.y == y) {
                 return true;

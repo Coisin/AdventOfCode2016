@@ -1,14 +1,14 @@
-package day4;
+package day8;
 
 import AdventOfCode.Day;
 
 /**
  * Created by oisin on 12/9/16.
  */
-public class Day4 extends Day {
+public class Day8 extends Day {
     public void solve() {
-        readInput(new Day4().getClass());
-        String commands[] = input.split("\n");
+        readInput(new Day8().getClass());
+        String[] commands = input.split("\n");
 
         Part part1 = new Part1();
         Part part2 = new Part2();

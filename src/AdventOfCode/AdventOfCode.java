@@ -7,6 +7,7 @@ import day4.Day4;
 import day5.Day5;
 import day6.Day6;
 import day7.Day7;
+import day8.Day8;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ public class AdventOfCode {
         problems.add(new Day5());
         problems.add(new Day6());
         problems.add(new Day7());
+        problems.add(new Day8());
     }
     public static void main(String args[]) {
         if(args.length > 0) {
